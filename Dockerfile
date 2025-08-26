@@ -25,8 +25,7 @@ RUN apt-get update && \
         libmagic1 \
         libswscale-dev \
         openssl \
-        openssh-server \
-        wkhtmltopdf && \
+        openssh-server && \
     curl -sL https://deb.nodesource.com/setup_18.x | bash - && \
     apt-get install -y nodejs && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/ /tmp/*
