@@ -35,7 +35,6 @@ WORKDIR /data/Hikka
 COPY . /data/Hikka
 
 RUN pip install --no-warn-script-location --no-cache-dir -U -r requirements.txt
-RUN pip install --no-cache-dir .
 
 EXPOSE 8080
 CMD ["python", "-m", "hikka"]
